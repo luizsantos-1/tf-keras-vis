@@ -26,7 +26,7 @@ class ActivationMaximization(ModelVisualization):
             input_modifiers=[Jitter(jitter=4), Rotate2D(degree=1)],
             regularizers=[TotalVariation2D(weight=1.0),
                           Norm(weight=0.3, p=1)],
-            steps=400,
+            steps=600,
             optimizer=None,  # When None, the default is tf.optimizers.RMSprop(1.0, 0.999)
             gradient_modifier=None,
             callbacks=None,
